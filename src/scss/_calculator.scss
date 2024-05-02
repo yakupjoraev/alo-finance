@@ -1,0 +1,309 @@
+.calculator {
+  position: relative;
+
+  // .profit__icon
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: $breakpoint768) {
+      width: 48px;
+      height: 24px;
+    }
+  }
+
+  // .calculator__title
+
+  &__title {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  // .calculator__text
+
+  &__text {
+    max-width: 1000px;
+    margin: 0 auto 110px;
+    text-align: center;
+
+    @media (max-width: $breakpoint1450) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .calculator__main
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 116px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 60px;
+    }
+
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column-reverse;
+      row-gap: 40px;
+    }
+  }
+
+  // .calculator__profit
+
+  &__profit {
+    flex: 0 0 494px;
+    height: 292px;
+    padding: 60px;
+    background-image: url('../img/icons/calculator-profit-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 494px 292px;
+
+    @media (max-width: $breakpoint1450) {
+      flex: 0 0 380px;
+      background-size: 380px 240px;
+    }
+
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 auto;
+      width: 380px;
+      padding: 40px;
+      height: 240px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      background-image: none;
+      background-color: #2575FC;
+      border-radius: 20px;
+    }
+  }
+
+  // .calculator__profit-text
+
+  &__profit-text {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 38px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .calculator__profit-sum
+
+  &__profit-sum {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 38px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .calculator__form
+
+  &__form {
+    width: 100%;
+  }
+
+  // .calculator__btns
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-bottom: 20px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .calculator__btn
+
+  &__btn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    height: 90px;
+    outline: 0;
+    border: 0;
+    // background-color: var(--white-color);
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(180deg, #6A12CB 0%, #2575FC 100%) border-box;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 24px;
+    text-align: center;
+    color: #5e6366;
+    transition: background 0.2s linear, color 0.2s linear;
+
+    &.active {
+      background: linear-gradient(180deg, #6A12CB 0%, #2575FC 100%);
+      color: var(--white-color);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background: linear-gradient(180deg, #6A12CB 0%, #2575FC 100%);
+        color: var(--white-color);
+      }
+    }
+
+    @media (max-width: $breakpoint1450) {
+      height: 70px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 50px;
+    }
+  }
+
+  // .calculator__groups
+
+  &__groups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18px;
+    margin-bottom: 24px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+  }
+
+  // .calculator__group
+
+  &__group {}
+
+  // .calculator__label
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: var(--main-font);
+    font-size: 12px;
+    color: var(--label-color);
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 4px;
+    }
+  }
+
+  // .calculator__input
+
+  &__input {
+    padding: 8px 0;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--black-color);
+    font-family: var(--main-font);
+    font-size: 24px;
+    color: var(--text-color);
+    transition: border 0.2s linear;
+
+    &::placeholder {
+      font-family: var(--main-font);
+      font-size: 24px;
+      color: #5e6366;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--label-color);
+      }
+    }
+
+    &:active,
+    &:focus {
+      border-color: var(--label-color);
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 4px 0;
+      font-size: 18px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+
+  // .calculator__result
+
+  &__result {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    height: 90px;
+    outline: 0;
+    border: 0;
+    // background-color: var(--white-color);
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(180deg, #6A12CB 0%, #2575FC 100%) border-box;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 24px;
+    text-align: center;
+    color: #5e6366;
+    cursor: pointer;
+    transition: background 0.2s linear, color 0.2s linear;
+
+    &.active {
+      background: linear-gradient(180deg, #6A12CB 0%, #2575FC 100%);
+      color: var(--white-color);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background: linear-gradient(180deg, #6A12CB 0%, #2575FC 100%);
+        color: var(--white-color);
+      }
+    }
+
+    @media (max-width: $breakpoint1450) {
+      height: 70px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 50px;
+    }
+  }
+}

@@ -1,7 +1,33 @@
 <section class="profit section">
-  <div class="container">
-    <div class="profit__inner">
 
+  <div class="profit-container">
+    <div class="profit__inner">
+      <div class="profit__main">
+        <img class="calculator__icon" width="96" height="66" src="./img/icons/calculator-icon.svg" alt="icon">
+        <div class="profit__calculator">
+          @@include('./_calculator.html')
+        </div>
+
+        <div class="profit__table">
+          <h5 class="profit__table-label">Last 5 Weeks Performance</h5>
+
+          @@include('./_table.html')
+        </div>
+
+        <div class="profit__footer">
+          <div class="profit__footer-info">
+            <img src="./img/icons/coffee.svg" width="38" height="38" alt="coffee icon">
+            <p class="profit__footer-text">
+              Please take a moment to study about Dividends Cycle and Difference in Account Denomination Performance
+            </p>
+          </div>
+
+          <a class="profit__footer-link btn-secondary" href="#">
+            <span>Go to GitBook</span>
+            <img src="./img/icons/arrow-up-right.svg" width="24" height="24" alt="arrow-up-right icon">
+          </a>
+        </div>
+      </div>
 
       @@include('./_join.html')
     </div>

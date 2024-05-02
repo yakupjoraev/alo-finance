@@ -1,0 +1,116 @@
+.table__container {
+  border: 1px solid rgba(10, 10, 55, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint768) {
+    width: calc(100% + 40px);
+    overflow-x: auto;
+    margin: 0 -20px;
+    border-radius: 12px;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
+
+  @media (max-width: $breakpoint768) {
+    min-width: 150px;
+  }
+}
+
+.table td {
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--text-color);
+
+
+  @media (max-width: $breakpoint992) {
+    font-size: 18px;
+  }
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--text-color);
+
+  img {
+    display: inline;
+  }
+
+
+  @media (max-width: $breakpoint992) {
+    font-size: 18px;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.table .table-data {
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(10, 10, 55, 0.5);
+
+
+  @media (max-width: $breakpoint992) {
+    font-size: 18px;
+  }
+}
+
+.table-fiol {
+  background: #f6eeff;
+}
+
+.table-blue {
+  background: #ebf2ff;
+}
+
+.table thead {
+  border-radius: 20px 0 0 20px;
+
+  th {
+    border-bottom: 1px solid rgba(10, 10, 55, 0.3);
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(10, 10, 55, 0.3);
+    }
+
+    &:not(:first-child) {
+      border-left: 1px solid rgba(10, 10, 55, 0.3);
+    }
+  }
+}
+
+.table tbody {
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid rgba(10, 10, 55, 0.3);
+  }
+
+  tr td {
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(10, 10, 55, 0.3);
+    }
+
+    &:not(:first-child) {
+      border-left: 1px solid rgba(10, 10, 55, 0.3);
+    }
+  }
+}
