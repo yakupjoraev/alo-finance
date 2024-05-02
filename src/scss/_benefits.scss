@@ -1,0 +1,257 @@
+.benefits {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -50%;
+    width: 600px;
+    height: 1200px;
+    background-image: url('../img/benefits/benefits-cirkles.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  // .benefits__inner
+
+  &__inner {}
+
+  // .benefits__head
+
+  &__head {
+    max-width: 700px;
+    margin: 0 auto 92px;
+
+    @media (max-width: $breakpoint1450) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .benefits__title
+
+  &__title {
+    text-align: center;
+
+    @media (max-width: $breakpoint1450) {}
+  }
+
+  // .benefits__text
+
+  &__text {
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .benefits__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 180px;
+    row-gap: 40px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .benefits__item
+
+  &__item {}
+
+  // .benefits__line
+
+  &__line {}
+
+  // .benefits__line-inner
+
+  &__line-inner {}
+
+  // .benefits__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  // .benefits__check
+
+  &__check {}
+
+  // .benefits__row-label
+
+  &__row-label {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 22px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 18px;
+    }
+  }
+
+  // .benefits__item-text
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-color);
+    opacity: 0.5;
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 16px;
+    }
+  }
+
+  // .benefits__center
+
+  &__center {
+    position: relative;
+    padding: 260px 0;
+
+    @media (max-width: $breakpoint992) {
+      padding: 180px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 100px 0;
+    }
+  }
+
+  // .benefits__center-bg
+
+  &__center-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $breakpoint992) {
+      height: 60%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 80%;
+    }
+  }
+
+  // .benefits__center-texts
+
+  &__center-texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  // .benefits__center-title
+
+  &__center-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 94px;
+    line-height: 100%;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 64px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 32px;
+    }
+  }
+
+  // .benefits__center-block
+
+  &__center-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 16px;
+    }
+  }
+
+  // .benefits__center-arrow
+
+  &__center-arrow {
+    @media (max-width: $breakpoint1450) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  // .benefits__center-text
+
+  &__center-text {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 94px;
+    line-height: 100%;
+    background: linear-gradient(270deg, #6a12cb 0%, #2575fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 64px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 32px;
+    }
+  }
+}

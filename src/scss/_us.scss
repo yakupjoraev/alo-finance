@@ -1,0 +1,158 @@
+.us {
+
+  // .us__inner
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 160px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  // .us__info
+
+  &__info {
+    flex: 0 1 620px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    @media (max-width: $breakpoint1450) {
+      row-gap: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .us__title
+
+  &__title {}
+
+  // .us__line
+
+  &__line {}
+
+  // .us__line-inner
+
+  &__line-inner {}
+
+  // .us__items
+
+  &__items {
+    flex: 0 1 680px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+
+    @media (max-width: $breakpoint1450) {
+      row-gap: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .us__item
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 38px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 16px;
+    }
+  }
+
+  // .us__item-icon
+
+  &__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    min-width: 74px;
+    height: 74px;
+    border-radius: 20px;
+    background: linear-gradient(270deg, rgb(106, 18, 203, 0.1) 0%, rgb(37, 117, 252, 0.1) 100%);
+
+    @media (max-width: $breakpoint1450) {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+    }
+  }
+
+  // .us__item-pic
+
+  &__item-pic {
+    @media (max-width: $breakpoint1450) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  // .us__item-info
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @media (max-width: $breakpoint1450) {
+      row-gap: 10px;
+    }
+  }
+
+  // .us__item-label
+
+  &__item-label {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .us__item-text
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--text-color);
+
+    i {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(10, 10, 55, 0.5);
+    }
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      line-height: 120%;
+      font-size: 14px;
+    }
+  }
+}
