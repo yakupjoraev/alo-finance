@@ -17,7 +17,7 @@
 
     @media (max-width: $breakpoint768) {
       padding: 20px;
-      row-gap: 40px;
+      row-gap: 140px;
     }
   }
 
@@ -71,6 +71,12 @@
     font-size: 30px;
     line-height: 120%;
     color: var(--text-color);
+
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
   }
 
   // .profit__footer
@@ -99,11 +105,14 @@
       row-gap: 24px;
       padding: 24px;
 
-      @media (max-width: $breakpoint768) {
-        row-gap: 12px;
-        padding: 12px;
-        margin: 0;
-      }
+
+    }
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 12px;
+      padding: 40px 12px;
+      border-radius: 12px;
+      background-position: center;
     }
   }
 
@@ -116,6 +125,12 @@
 
     @media (max-width: $breakpoint992) {
       column-gap: 12px;
+    }
+
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+
     }
   }
 
@@ -135,6 +150,7 @@
 
     @media (max-width: $breakpoint768) {
       font-size: 14px;
+      text-align: center;
     }
   }
 

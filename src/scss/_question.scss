@@ -44,7 +44,7 @@
     border-radius: 20px;
 
     @media (max-width: $breakpoint768) {
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
       width: 54px;
       height: 54px;
       min-width: 54px;
@@ -66,7 +66,12 @@
 
   // .question__title
 
-  &__title {}
+  &__title {
+
+    @media (max-width: $breakpoint768) {
+      text-align: center;
+    }
+  }
 
   // .question__line
 

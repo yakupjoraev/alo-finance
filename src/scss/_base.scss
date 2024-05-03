@@ -33,11 +33,21 @@ body {
 }
 
 .wrapper {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
   overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+  }
 
   &--not-hidden {
     overflow: visible;
@@ -61,6 +71,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: var(--text-color);
+
+  @media (hover:hover) {
+    &:hover {
+      background: var(--main-gradient);
+      color: var(--white-color);
+    }
+  }
 }
 
 .btn-secondary {
@@ -76,6 +93,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+
+  @media (hover:hover) {
+    &:hover {
+      background: var(--white-color);
+      border-color: var(--grey-color);
+      color: var(--text-color);
+    }
+  }
 }
 
 // Animations

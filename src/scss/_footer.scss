@@ -76,6 +76,12 @@
     font-size: 14px;
     line-height: 140%;
     color: var(--text-color);
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
   }
 
   // .footer__copy

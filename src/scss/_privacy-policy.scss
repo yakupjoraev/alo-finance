@@ -96,6 +96,12 @@
     line-height: 120%;
     color: var(--text-color);
 
+    @media (hover:hover) {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
     @media (max-width: $breakpoint992) {
       font-size: 16px;
     }
