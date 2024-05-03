@@ -163,6 +163,21 @@
     column-gap: 10px;
     white-space: nowrap;
 
+    img {
+      transition: 0.2s linear;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--text-color);
+
+        img {
+          transform: translateX(5px);
+          filter: brightness(0) saturate(100%) invert(0%) sepia(94%) saturate(7421%) hue-rotate(267deg) brightness(114%) contrast(95%);
+        }
+      }
+    }
+
 
     @media (max-width: $breakpoint992) {
       width: 100%;
