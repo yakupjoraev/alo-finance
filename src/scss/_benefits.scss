@@ -145,6 +145,18 @@
     position: relative;
     padding: 260px 0;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background-image: url('../img/icons/dots.svg');
+      z-index: -1;
+    }
+
     @media (max-width: $breakpoint992) {
       padding: 180px 0;
     }

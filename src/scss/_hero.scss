@@ -211,7 +211,7 @@
   // .hero__block--eth
 
   &__block--eth {
-    left: 80%;
+    left: 75%;
     top: 30%;
 
     @media (max-width: 1700px) {
@@ -228,6 +228,29 @@
   // .hero__block--btc
 
   &__block--btc {
+    top: -10%;
+    left: 80%;
+
+    @media (max-width: $breakpoint1450) {
+      top: 28%;
+      left: auto;
+      right: 25%;
+    }
+
+    @media (max-width: $breakpoint992) {
+      top: 20%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      top: 75%;
+      right: auto;
+      left: 1%;
+    }
+  }
+
+  // .hero__block--usd
+
+  &__block--usd {
     left: 5%;
     top: 20%;
 
@@ -238,22 +261,6 @@
     @media (max-width: $breakpoint768) {
       left: 5%;
       top: 35%;
-    }
-  }
-
-  // .hero__block--usd
-
-  &__block--usd {
-    top: 90%;
-    left: 15%;
-
-    @media (max-width: $breakpoint1450) {
-      top: 82%;
-    }
-
-    @media (max-width: $breakpoint768) {
-      top: 75%;
-      left: 1%;
     }
   }
 
@@ -326,7 +333,7 @@
     }
 
     @media (max-width: $breakpoint768) {
-      transform: translateY(-10px) translateX(-10px);
+      transform: translateX(0%);
     }
   }
 
@@ -503,6 +510,13 @@
       display: block;
       max-width: 100%;
       width: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: min-content;
+      width: 580px;
+      margin: 0 auto;
+      transform: translateX(-16px);
     }
   }
 

@@ -611,18 +611,18 @@ body.locked {
 }
 
 .hero__block--eth {
-  left: 80%;
+  left: 75%;
   top: 30%;
 }
 
 .hero__block--btc {
-  left: 5%;
-  top: 20%;
+  top: -10%;
+  left: 80%;
 }
 
 .hero__block--usd {
-  top: 90%;
-  left: 15%;
+  left: 5%;
+  top: 20%;
 }
 
 .hero__center {
@@ -925,6 +925,20 @@ body.locked {
 .benefits__center {
   position: relative;
   padding: 260px 0;
+}
+
+.benefits__center::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-image: url("../img/icons/dots.svg");
+  z-index: -1;
 }
 
 .benefits__center-bg {
@@ -1955,7 +1969,7 @@ body.locked {
     top: 35%;
   }
 
-  .hero__block--btc {
+  .hero__block--usd {
     left: 1%;
   }
 }
@@ -2016,8 +2030,10 @@ body.locked {
     font-size: 32px;
   }
 
-  .hero__block--usd {
-    top: 82%;
+  .hero__block--btc {
+    top: 28%;
+    left: auto;
+    right: 25%;
   }
 
   .hero__center {
@@ -2403,6 +2419,10 @@ body.locked {
     font-size: 48px;
   }
 
+  .hero__block--btc {
+    top: 20%;
+  }
+
   .hero__center {
     padding: 280px 0;
   }
@@ -2748,13 +2768,14 @@ body.locked {
   }
 
   .hero__block--btc {
-    left: 5%;
-    top: 35%;
+    top: 75%;
+    right: auto;
+    left: 1%;
   }
 
   .hero__block--usd {
-    top: 75%;
-    left: 1%;
+    left: 5%;
+    top: 35%;
   }
 
   .hero__center {
@@ -2767,9 +2788,9 @@ body.locked {
   }
 
   .hero__balance--blue {
-    -webkit-transform: translateY(-10px) translateX(-10px);
-        -ms-transform: translateY(-10px) translateX(-10px);
-            transform: translateY(-10px) translateX(-10px);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
   .hero__balance--purple {
@@ -2780,6 +2801,17 @@ body.locked {
 
   .hero__lines {
     left: 54%;
+  }
+
+  .hero__lines-mobile {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    width: 580px;
+    margin: 0 auto;
+    -webkit-transform: translateX(-16px);
+        -ms-transform: translateX(-16px);
+            transform: translateX(-16px);
   }
 
   .us__inner {
