@@ -485,11 +485,20 @@ body.locked {
   color: var(--input-color);
 }
 
-.hero__bg {
+.hero__net {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -300px;
+  right: -30%;
   z-index: -1;
+  width: 1612px;
+  height: auto;
+  mix-blend-mode: color-burn;
+  opacity: 0.05;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .hero {
