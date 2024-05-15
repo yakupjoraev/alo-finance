@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -19,7 +20,7 @@
     </picture>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
   <!-- Navbar -->
   <nav class="nav">
     <div class="container">
@@ -31,10 +32,10 @@
         </div>
 
         <ul class="menu">
-          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Why ALO</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Calculator</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Docs</a></li>
+          <li class="menu__item active"><a href="#header" class="menu__item-link" data-scroll>Home</a></li>
+          <li class="menu__item"><a href="#benefits" class="menu__item-link" data-scroll>Why ALO</a></li>
+          <li class="menu__item"><a href="#calculator" class="menu__item-link" data-scroll>Calculator</a></li>
+          <li class="menu__item"><a href="#roadmap" class="menu__item-link" data-scroll>Docs</a></li>
 
           <li class="menu__item menu__item--left-auto"><a href="#" class="menu__item-link btn-primary" data-scroll>Sign
               up</a></li>
@@ -74,7 +75,7 @@
       </div>
 
       <div class="hero__main">
-        <div class="hero__block hero__block--purple hero__block--btc">
+        <div class="hero__block hero__block--purple hero__block--btc" data-aos="zoom-in-left">
           <div class="hero__block-top">
             <div class="hero__block-icon"><img width="21" height="21" src="./img/icons/hero-btc.svg" alt="btc icon">
             </div>
@@ -87,7 +88,7 @@
           </div>
         </div>
 
-        <div class="hero__block hero__block--purple hero__block--eth">
+        <div class="hero__block hero__block--purple hero__block--eth" data-aos="zoom-in-left">
           <div class="hero__block-top">
             <div class="hero__block-icon"><img width="21" height="21" src="./img/icons/hero-eth.svg" alt="eth icon">
             </div>
@@ -100,7 +101,7 @@
           </div>
         </div>
 
-        <div class="hero__block hero__block--blue hero__block--usd">
+        <div class="hero__block hero__block--blue hero__block--usd" data-aos="zoom-in-right">
           <div class="hero__block-top">
             <div class="hero__block-icon"><img width="21" height="21" src="./img/icons/hero-usdt.svg" alt="usdt icon">
             </div>
@@ -114,7 +115,7 @@
         </div>
 
         <div class="hero__center">
-          <div class="hero__balance hero__balance--blue">
+          <div class="hero__balance hero__balance--blue" data-aos="zoom-out-up">
             <div class="hero__balance-top">
               <p class="hero__balance-label">Invested Balanced</p>
               <img class="hero__balance-icon" src="./img/icons/hero-balance.svg" alt="wallet icon">
@@ -156,7 +157,7 @@
       <section class="us section">
   <div class="container">
     <div class="us__inner">
-      <div class="us__info">
+      <div class="us__info" data-aos="fade-right">
         <h3 class="us__title section-title">
           Why <br />
           Choose Us?
@@ -167,7 +168,7 @@
         </div>
       </div>
 
-      <div class="us__items">
+      <div class="us__items" data-aos="fade-left">
         <div class="us__item">
           <div class="us__item-icon">
             <img class="us__item-pic" width="36" height="36" src="./img/icons/lock-star-line.svg" alt="icon">
@@ -208,9 +209,9 @@
     </div>
   </div>
 </section>
-      <section class="benefits section">
+      <section class="benefits section" id="benefits">
   <div class="container">
-    <div class="benefits__inner">
+    <div class="benefits__inner" data-aos="zoom-in-up">
       <div class="benefits__head">
         <h3 class="benefits__title section-title">A Snapshot of Success</h3>
         <p class="benefits__text">Our unique blend of strategies has delivered stellar results since going public.
@@ -302,7 +303,7 @@
       <div class="profit__main">
         <img class="calculator__icon" width="96" height="66" src="./img/icons/calculator-icon.svg" alt="icon">
         <div class="profit__calculator">
-          <div class="calculator">
+          <div class="calculator" id="calculator">
 
   <h3 class="calculator__title section-title">Your Potential Profit Calculator</h3>
 
@@ -448,7 +449,7 @@
     </div>
   </div>
 
-  <div class="join__picture">
+  <div class="join__picture" data-aos="zoom-in-up">
     <picture>
       <source srcset="./img/join/join-pic.webp 1x, ./img/join/join-pic@2x.webp 2x" type="image/webp" />
       <source srcset="./img/join/join-pic.png 1x, ./img/join/join-pic@2x.png 2x" type="image/png" />
@@ -459,11 +460,11 @@
     </div>
   </div>
 </section>
-      <section class="roadmap section">
+      <section class="roadmap section" id="roadmap">
   <div class="container">
     <div class="roadmap__inner">
       <div class="roadmap__header">
-        <div class="roadmap__column">
+        <div class="roadmap__column" data-aos="fade-right">
           <h3 class="roadmap__title section-title">
             Roadmap to Success with ALO Finance
           </h3>
@@ -474,7 +475,7 @@
           </a>
         </div>
 
-        <div class="roadmap__column">
+        <div class="roadmap__column" data-aos="fade-left">
           <div class="roadmap__line section-line">
             <div class="roadmap__line-inner section-line-inner"></div>
           </div>
@@ -561,7 +562,7 @@
       <section class="question section">
   <div class="container">
     <div class="question__inner">
-      <div class="question__info">
+      <div class="question__info" data-aos="fade-right">
         <div class="question__icon">
           <img class="question__icon-pic" src="./img/icons/question-icon.svg" width="38" height="38"
             alt="question icon">
@@ -583,7 +584,7 @@
         </div>
       </div>
 
-      <form class="question__form form" action="#">
+      <form class="question__form form" action="#" data-aos="fade-left">
         <div class="form__group">
           <label class="form__label" for="input1">Label</label>
           <input class="form__input" type="text" id="input1" placeholder="Placehoder">
@@ -629,10 +630,25 @@
     </div>
   </div>
 </footer>
+    <div class="cookies">
+  <div class="cookies__inner">
+    <!-- <h4 class="cookies__title"></h4> -->
+
+    <div class="cookies__content">
+      <p class="cookies__text">
+        We process cookies. By remaining on the site, you consent to the use of cookies in accordance with the <a
+          href="privacy-policy.html">privacy policy</a>
+      </p>
+
+      <button type="button" class="cookies__btn" href="#">Accept</button>
+    </div>
+  </div>
+</div>
   </div>
 
 </body>
 
+<script src="./js/aos.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

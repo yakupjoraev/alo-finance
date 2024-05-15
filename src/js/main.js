@@ -51,3 +51,54 @@ function fixedNav() {
   }
 }
 window.addEventListener('scroll', fixedNav)
+
+
+function calculatorBtns() {
+  const container = document.querySelector('.calculator');
+  if (!container) {
+    return null
+  }
+  const calculatorBtns = document.querySelectorAll('.calculator__btn');
+
+  calculatorBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      calculatorBtns.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+}
+calculatorBtns();
+
+
+
+AOS.init();
+
+
+
+/*    куки    */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cookies = document.querySelector('.cookies');
+  const acceptBtn = document.querySelector('.cookies__btn');
+
+  acceptBtn.addEventListener('click', function () {
+    // Set cookie to expire in 30 days
+    const date = new Date();
+    date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = "cookieAccepted=true;" + expires + ";path=/";
+
+    // Hide the cookies notification
+    cookies.style.display = 'none';
+  });
+
+  // Check if the cookie is already set
+  if (document.cookie.includes('cookieAccepted=true')) {
+    cookies.style.display = 'none';
+  } else {
+    // Show the cookies notification if the cookie is not set
+    cookies.style.display = 'block';
+  }
+});

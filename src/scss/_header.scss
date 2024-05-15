@@ -54,6 +54,12 @@
 
     &--left-auto {
       margin-left: auto;
+      margin-right: -24px;
+
+      @media (max-width: $breakpoint1450) {
+        margin-right: 0;
+      }
+
     }
   }
 

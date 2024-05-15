@@ -19,7 +19,7 @@
     </picture>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
   <!-- Navbar -->
   <nav class="nav">
     <div class="container">
@@ -31,10 +31,10 @@
         </div>
 
         <ul class="menu">
-          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Why ALO</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Calculator</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Docs</a></li>
+          <li class="menu__item active"><a href="#header" class="menu__item-link" data-scroll>Home</a></li>
+          <li class="menu__item"><a href="#benefits" class="menu__item-link" data-scroll>Why ALO</a></li>
+          <li class="menu__item"><a href="#calculator" class="menu__item-link" data-scroll>Calculator</a></li>
+          <li class="menu__item"><a href="#roadmap" class="menu__item-link" data-scroll>Docs</a></li>
 
           <li class="menu__item menu__item--left-auto"><a href="#" class="menu__item-link btn-primary" data-scroll>Sign
               up</a></li>
@@ -232,7 +232,7 @@
       <section class="question section">
   <div class="container">
     <div class="question__inner">
-      <div class="question__info">
+      <div class="question__info" data-aos="fade-right">
         <div class="question__icon">
           <img class="question__icon-pic" src="./img/icons/question-icon.svg" width="38" height="38"
             alt="question icon">
@@ -254,7 +254,7 @@
         </div>
       </div>
 
-      <form class="question__form form" action="#">
+      <form class="question__form form" action="#" data-aos="fade-left">
         <div class="form__group">
           <label class="form__label" for="input1">Label</label>
           <input class="form__input" type="text" id="input1" placeholder="Placehoder">
