@@ -72,6 +72,25 @@ function calculatorBtns() {
 }
 calculatorBtns();
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tabButtons = document.querySelectorAll('.roadmap__btn');
+  const tabContents = document.querySelectorAll('.roadmap__content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Удаляем класс active у всех кнопок и контентов
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Добавляем класс active только той кнопке, на которую кликнули, и соответствующему контенту
+      button.classList.add('active');
+      const tabContentId = button.getAttribute('data-roadmap-btn');
+      const activeTabContent = document.querySelector(`[data-roadmap-content="${tabContentId}"]`);
+      activeTabContent.classList.add('active');
+    });
+  });
+});
+
 
 
 AOS.init();

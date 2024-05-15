@@ -1,22 +1,22 @@
-<svg width="1002" height="2251" viewBox="0 0 1002 2251" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.3" filter="url(#filter0_f_2035_180)">
-<circle cx="123.533" cy="879.006" r="375.136" transform="rotate(78.7709 123.533 879.006)" fill="#48BCF9"/>
+<svg width="1001" height="2251" viewBox="0 0 1001 2251" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3" filter="url(#filter0_f_19_160)">
+<circle cx="122.533" cy="879.006" r="375.136" transform="rotate(78.7709 122.533 879.006)" fill="#48BCF9"/>
 </g>
-<g opacity="0.3" filter="url(#filter1_f_2035_180)">
-<circle cx="-178.994" cy="1372" r="375.136" transform="rotate(78.7709 -178.994 1372)" fill="url(#paint0_linear_2035_180)"/>
+<g opacity="0.3" filter="url(#filter1_f_19_160)">
+<circle cx="-179.994" cy="1372" r="375.136" transform="rotate(78.7709 -179.994 1372)" fill="url(#paint0_linear_19_160)"/>
 </g>
 <defs>
-<filter id="filter0_f_2035_180" x="-754.626" y="0.846771" width="1756.32" height="1756.32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_19_160" x="-755.626" y="0.846771" width="1756.32" height="1756.32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="251.476" result="effect1_foregroundBlur_2035_180"/>
+<feGaussianBlur stdDeviation="251.476" result="effect1_foregroundBlur_19_160"/>
 </filter>
-<filter id="filter1_f_2035_180" x="-1057.15" y="493.837" width="1756.32" height="1756.32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f_19_160" x="-1058.15" y="493.837" width="1756.32" height="1756.32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="251.476" result="effect1_foregroundBlur_2035_180"/>
+<feGaussianBlur stdDeviation="251.476" result="effect1_foregroundBlur_19_160"/>
 </filter>
-<linearGradient id="paint0_linear_2035_180" x1="196.142" y1="1372" x2="-554.13" y2="1372" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_19_160" x1="195.142" y1="1372" x2="-555.13" y2="1372" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6A12CB"/>
 <stop offset="1" stop-color="#2575FC"/>
 </linearGradient>

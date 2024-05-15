@@ -38,6 +38,7 @@
     border: 0;
     outline: 0;
     padding: 2px 0 0;
+    background-color: transparent;
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
@@ -67,5 +68,19 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--input-color);
+  }
+
+  // .form__btn
+  &__btn {
+    margin-top: 40px;
+    margin-left: auto;
+    min-width: 280px;
+    min-height: 60px;
+
+    @media (max-width: $breakpoint768) {
+      min-width: 100px;
+      width: 100%;
+      margin-left: 0;
+    }
   }
 }

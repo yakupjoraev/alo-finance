@@ -348,7 +348,7 @@
 
   &__balance--purple {
     margin-left: auto;
-    transform: translateY(160px) translateX(-160px);
+    transform: translateY(160px) translateX(-160px) !important;
     background: #f6eeff;
 
     .hero__balance-sum {
@@ -360,15 +360,15 @@
     }
 
     @media (max-width: $breakpoint1450) {
-      transform: translateY(160px) translateX(120px);
+      transform: translateY(160px) translateX(120px) !important;
     }
 
     @media (max-width: $breakpoint992) {
-      transform: translateY(260px) translateX(-80px);
+      transform: translateY(260px) translateX(-80px) !important;
     }
 
     @media (max-width: $breakpoint768) {
-      transform: translateY(130px) translateX(10px);
+      transform: translateY(130px) translateX(10px) !important;
     }
   }
 
@@ -526,4 +526,82 @@
     }
   }
 
+}
+
+.hero {
+  &__text {
+    position: relative;
+  }
+
+  &__text a:hover~.hero__tooltip {
+    opacity: 1;
+    user-select: auto;
+    pointer-events: visible;
+    z-index: 3;
+  }
+
+
+  // .hero__tooltip
+
+  &__tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 400px;
+    width: fit-content;
+    height: auto;
+    padding: 24px;
+    background-color: #f4edfb;
+    border-radius: 12px;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+      user-select: auto;
+      pointer-events: visible;
+      z-index: 3;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+  }
+
+  // .hero__tooltip-label
+
+  &__tooltip-label {
+    text-align: left;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    line-height: 120%;
+    background: linear-gradient(270deg, #6a12cb 0%, #2575fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .hero__tooltip-text
+
+  &__tooltip-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+    }
+  }
 }
