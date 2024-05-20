@@ -1,14 +1,19 @@
 .hero__net {
   position: absolute;
   top: -300px;
-  right: -30%;
+  right: 0;
   z-index: -1;
   width: 1612px;
   height: auto;
   mix-blend-mode: color-burn;
-  opacity: 0.06;
+  opacity: 1;
   user-select: none;
   pointer-events: none;
+
+  &--political {
+    top: 0;
+    object-position: bottom;
+  }
 }
 
 .hero {
