@@ -53,11 +53,13 @@
     <!-- Main Page -->
     <main>
       <section class="hero section">
-  <picture>
+  <!-- <picture>
     <source srcset="./img/hero/hero-net.webp" type="image/webp" />
     <source srcset="./img/hero/hero-net.png" type="image/png" />
     <img class="hero__net" src="./img/hero/hero-net.png" alt="Alt" />
-  </picture>
+  </picture> -->
+
+  <img class="hero__net" src="./img/hero/hero-net.svg" alt="Alt" />
 
   <div class="container">
     <div class="hero__inner">
@@ -328,14 +330,14 @@
   <div class="calculator__main">
     <div class="calculator__profit">
       <p class="calculator__profit-text">Your Profit is</p>
-      <div class="calculator__profit-sum">XXXX</div>
+      <div class="calculator__profit-sum" data-calculator-profit>XXXX</div>
     </div>
 
     <form class="calculator__form" action="#">
       <div class="calculator__btns">
-        <button type="button" class="calculator__btn">USD</button>
-        <button type="button" class="calculator__btn">BTC</button>
-        <button type="button" class="calculator__btn active">ETH</button>
+        <button type="button" class="calculator__btn" data-calculator-btn="USD">USD</button>
+        <button type="button" class="calculator__btn" data-calculator-btn="BTC">BTC</button>
+        <button type="button" class="calculator__btn active" data-calculator-btn="ETH">ETH</button>
       </div>
 
       <div class="calculator__groups">
