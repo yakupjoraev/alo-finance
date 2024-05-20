@@ -501,7 +501,7 @@ body.locked {
 
 .hero__net {
   position: absolute;
-  top: -400px;
+  top: -500px;
   right: 0;
   z-index: -1;
   width: 2400px;
